@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<title>NEON TAC // Tic Tac Toe</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="bg-fx"></div>
+<div class="grid-overlay"></div>
+<canvas id="particles"></canvas>
+<canvas id="confetti-canvas"></canvas>
+
+<div class="app">
+  <div class="screen">
+
+    <div class="top-bar">
+      <button class="icon-btn" id="mute-btn" title="Toggle sound" aria-label="Toggle sound">🔊</button>
+    </div>
+
+    <div class="title-block">
+      <div class="logo">Neon Tac</div>
+      <div class="tagline">Tic · Tac · Toe </div>
+    </div>
+
+    <div id="start-screen" class="glass">
+      <div class="mode-select">
+        <div class="mode-label">Select Mode</div>
+        <div class="option-row">
+          <button class="option-btn active" data-mode="pvp">2 Players</button>
+          <button class="option-btn" data-mode="pvc">Vs Computer</button>
+        </div>
+      </div>
+
+      <div class="mode-select" id="difficulty-block" style="display:none;">
+        <div class="mode-label">AI Symbol</div>
+        <div class="option-row">
+          <button class="option-btn" data-symbol="O">AI Plays O</button>
+          <button class="option-btn" data-symbol="X">AI Plays X</button>
+        </div>
+      </div>
+
+      <button class="glow-btn" id="start-btn">Start Game</button>
+    </div>
+
+    <div id="game-screen">
+      <div class="scoreboard glass">
+        <div class="score-card player-x active" id="score-x-card">
+          <div class="label">Player X</div>
+          <div class="value" id="score-x">0</div>
+        </div>
+        <div class="score-card draws" id="score-d-card">
+          <div class="label">Draws</div>
+          <div class="value" id="score-d">0</div>
+        </div>
+        <div class="score-card player-o" id="score-o-card">
+          <div class="label">Player O</div>
+          <div class="value" id="score-o">0</div>
+        </div>
+      </div>
+
+      <div class="turn-indicator" id="turn-indicator">
+        <span class="dot"></span>
+        <span id="turn-text">Player X's Turn</span>
+      </div>
+
+      <div class="board-wrap glass">
+        <div class="board" id="board">
+          <div class="win-line" id="win-line"></div>
+        </div>
+      </div>
+
+      <div class="status-msg" id="status-msg"></div>
+
+      <div class="controls">
+        <button class="ctrl-btn" id="restart-btn">Restart</button>
+        <button class="ctrl-btn danger" id="reset-score-btn">Reset Score</button>
+        <button class="ctrl-btn" id="menu-btn">Menu</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
