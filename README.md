@@ -1,10 +1,19 @@
 # 🎮 Neon Tac
-A modern Neon-themed Tic Tac Toe game built with HTML, CSS, and JavaScript, featuring a glowing cyberpunk-inspired interface and smooth gameplay.
+A modern neon-themed Tic Tac Toe game built with HTML, CSS, and JavaScript. It features a futuristic glowing interface, smooth animations, responsive design, and an engaging two-player gameplay experience.
+
+## 🚀 Live Demo
+https://tic-tac-toe-game-alpha-tawny.vercel.app/
+
+## 🛠️ Tech Stack
+- HTML5
+- CSS3
+- JavaScript
 
 ## ✨ Features
-- 🎨 Modern Neon UI with glowing effects
+- 🌌 Futuristic Neon UI
+- ✨ Glowing animations and visual effects
 - 👥 Two-player gameplay
 - 🏆 Automatic win & draw detection
 - 🔄 One-click game restart
 - 📱 Fully responsive design
-- ⚡ Smooth animations and interactions
+- ⚡ Smooth and interactive user experience
